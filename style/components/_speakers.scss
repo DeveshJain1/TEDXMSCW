@@ -1,0 +1,149 @@
+.main-title {
+  color         : #2d2d2d;
+  text-align    : center;
+  text-transform: capitalize;
+  padding       : 0.7em 0;
+}
+
+.speaker-c {
+  row-gap              : 2rem;
+  display              : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 640px) {
+  .speaker-c {
+    grid-template-columns: 1fr !important;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  .speaker-text {
+    font-size: .3em;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+
+  .speaker-c {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+.tile .title {
+  color        : #222020;
+  text-align   : center;
+  margin-bottom: 10px;
+}
+
+.speaker {
+  position : relative;
+  width    : 90%;
+  max-width: 2000px;
+  margin   : auto;
+  overflow : hidden;
+}
+
+.speaker .speaker-overlay {
+  background        : linear-gradient(to bottom, rgba(75, 6, 3, 0.5) 20%, rgb(0, 0, 0));
+  position          : absolute;
+  height            : 99%;
+  width             : 100%;
+  left              : 0;
+  top               : 0;
+  bottom            : 0;
+  right             : 0;
+  opacity           : 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition   : all 0.4s ease-in-out 0s;
+  transition        : all 0.4s ease-in-out 0s;
+}
+
+.speaker:hover .speaker-overlay {
+  opacity: 1;
+}
+
+.speaker-image {
+  width : 100%;
+  height: 40rem;
+}
+
+.speaker-details {
+  position          : absolute;
+  text-align        : center;
+  padding           : .3rem !important;
+  width             : 100%;
+  top               : 50%;
+  left              : 50%;
+  opacity           : 0;
+  -webkit-transform : translate(-50%, -50%);
+  -moz-transform    : translate(-50%, -50%);
+  transform         : translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition   : all 0.3s ease-in-out 0s;
+  transition        : all 0.3s ease-in-out 0s;
+}
+
+.speaker:hover .speaker-details {
+  top    : 40%;
+  left   : 50%;
+  opacity: 1;
+}
+
+.speaker-details h3 {
+  color         : #fff;
+  font-weight   : 500;
+  font-size     : 1.6rem;
+  letter-spacing: 0.15em;
+  margin-bottom : 0.5em;
+  text-transform: uppercase;
+}
+
+.speaker-text {
+  color    : #fff;
+  font-size: 16px;
+}
+
+@media screen and (max-width:700px) {
+
+  .speaker-text {
+    font-size: .8em;
+  }
+
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.btn-speakers-info {
+  padding   : 1rem;
+  margin    : 1rem;
+  background: #000;
+  color     : wheat;
+  display   : inline-block;
+}
+
+.btn-speakers-info:hover {
+  background: red;
+  box-shadow: 0 0 25px red, inset 0 2px 20px black;
+}
+
+.btn-speakers-info:active {
+  position: relative;
+  top     : 1px;
+}
+
+
+.speaker-c {
+  position  : relative;
+  min-height: 150vh;
+}
+.tile-c{display: flex;
+  justify-content: center;
+  align-items: center;
+}

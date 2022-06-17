@@ -1,0 +1,320 @@
+:root {
+     --img-size  : 70%;
+     --img-height: 40rem;
+     --btn-f-size: 27px;
+     --btn-p-tb  : 1em;
+     --btn-p-lr  : 2.5em;
+}
+
+@media screen and (max-width:700px) {
+
+     :root {
+          --img-size  : 100%;
+          --img-height: 30rem;
+
+     }
+}
+
+@media screen and (max-width:400px) {
+
+     :root {
+          --img-size  : 100%;
+          --img-height: 15rem;
+          --btn-f-size: 16px;
+          --btn-p-tb  : .8em;
+          --btn-p-lr  : 2em;
+
+     }
+}
+
+@media screen and (max-width:500px) {
+
+     :root {
+          --img-size  : 100%;
+          --img-height: 30rem;
+          --btn-f-size: 20px;
+          --btn-p-tb  : .8em;
+          --btn-p-lr  : 2em;
+
+     }
+}
+
+@media screen and (max-width:1200px) {
+     :root {
+          --img-size  : 70%;
+          --img-height: 34rem;
+     }
+}
+
+.m-bg {
+     overflow             : hidden;
+     background-image     : url("../img/main/bg-main.jpg");
+     background-attachment: fixed;
+     background-repeat    : no-repeat;
+     background-color     : rgba(0, 0, 0, 0.4);
+     background-blend-mode: darken;
+
+     background-size: cover;
+     height         : 100vh;
+     width          : 100%;
+}
+
+.lgp {
+     display        : flex;
+     justify-content: center;
+     align-items    : center;
+
+}
+
+.lgp img {
+     width : var(--img-size);
+     height: var(--img-height);
+}
+
+.align-btn {
+     display        : flex;
+     justify-content: center;
+     align-items    : end;
+     padding-bottom : 40px;
+}
+
+
+.a {
+     position        : relative;
+     font-size       : var(--btn-f-size);
+     text-transform  : uppercase;
+     text-decoration : none;
+     padding         : var(--btn-p-tb) var(--btn-p-lr);
+     display         : inline-block;
+     border-radius   : 6em;
+     transition      : all .2s;
+     border          : none;
+     font-family     : inherit;
+     font-weight     : 500;
+     color           : black;
+     background-color: white;
+}
+
+.a:hover {
+     transform        : translateY(-6px);
+     box-shadow       : 0 10px 20px rgba(0, 0, 0, 0.2);
+     -webkit-transform: translateY(-6px);
+     -moz-transform   : translateY(-6px);
+     -ms-transform    : translateY(-6px);
+     -o-transform     : translateY(-6px);
+}
+
+.a:active {
+     transform        : translateY(-3px);
+     box-shadow       : 0 5px 10px rgba(0, 0, 0, 0.2);
+     -webkit-transform: translateY(-3px);
+     -moz-transform   : translateY(-3px);
+     -ms-transform    : translateY(-3px);
+     -o-transform     : translateY(-3px);
+}
+
+.a::after {
+     content           : "";
+     display           : inline-block;
+     height            : 100%;
+     width             : 100%;
+     border-radius     : 100px;
+     position          : absolute;
+     top               : 0;
+     left              : 0;
+     z-index           : -1;
+     transition        : all .4s ease;
+     -webkit-transition: all .4s ease;
+     -moz-transition   : all .4s ease;
+     -ms-transition    : all .4s ease;
+     -o-transition     : all .4s ease;
+}
+
+.a::after {
+     background-color: #fff;
+}
+
+.a:hover::after {
+     transform: scaleX(1.4) scaleY(1.6);
+     opacity  : 0;
+}
+
+.theme {
+     overflow: hidden;
+}
+
+.theme img {
+     width : 100%;
+     height: 70vh;
+}
+
+.event-desc {
+     text-align: center;
+}
+
+.event-desc::first-letter {
+     font: 2.7rem bolder;
+}
+
+.mata-sundari-ji {
+     overflow             : hidden;
+     width                : 100%;
+     display              : grid;
+     grid-template-columns: 3fr 3fr;
+     padding-bottom: 3rem;
+}
+
+.i {
+     padding   : 4rem 0;
+     text-align: center;
+     color     : white;
+}
+
+.img-mata {
+     display       : grid;
+     place-items   : center;
+     padding-bottom: 2rem;
+}
+
+.img-mata img {
+     border-radius: 10px;
+     width : 100%;
+     height: 50vh;
+}
+
+.crack{
+     overflow: hidden;
+     display: flex;justify-content: center;
+     align-items: center;
+}
+
+.crack img{
+     width: 80%;
+}
+.img-mata h2,
+.img-mata h3 {
+     color: white;
+}
+
+.img-desc p {
+     padding    : 0 4rem;
+     text-align : justify;
+     line-height: 3rem;
+     font-size  : 1.9rem;
+}
+
+@media screen and (max-width:700px) {
+
+     :root {
+          --img-size  : 100%;
+          --img-height: 30rem;
+
+     }
+     
+.crack img{
+     width: 85%;
+}
+}
+
+@media screen and (max-width:400px) {
+
+     .crack img{
+          width: 90%;
+     }
+     :root {
+          --img-size  : 100%;
+          --img-height: 15rem;
+          --btn-f-size: 16px;
+          --btn-p-tb  : .8em;
+          --btn-p-lr  : 2em;
+
+     }
+}
+
+@media screen and (max-width:500px) {
+
+     :root {
+          --img-size  : 100%;
+          --img-height: 30rem;
+          --btn-f-size: 20px;
+          --btn-p-tb  : .8em;
+          --btn-p-lr  : 2em;
+
+     }
+
+     .img-mata {
+          padding-bottom: 2rem;
+     }
+
+     .img-desc p {
+          padding: 0 1rem;
+     }
+}
+
+@media screen and (max-width:1200px) {
+     :root {
+          --img-size  : 70%;
+          --img-height: 34rem;
+     }
+
+
+     .mata-sundari-ji {
+          display       : block;
+          padding-bottom: 10rem;
+
+     }
+
+     .mata-sundari-ji h1 {
+          color    : white;
+          font-size: 4rem;
+          padding  : 2rem 0;
+
+     }
+
+     .mata-sundari-ji .img-mata {
+          display    : grid;
+          place-items: center;
+     }
+
+     .mata-sundari-ji .img-desc p {
+          font-size: 1.5rem;
+     }
+
+     .img-mata {
+          width         : 100%;
+          padding-bottom: 2rem;
+     }
+}
+
+.clg-img {
+     background         : url("../../img/WhatsApp\ Image\ 2022-04-11\ at\ 11.57.16\ PM.jpeg") no-repeat fixed;
+     background-size    : cover;
+     background-position: center;
+     width              : 100%;
+     height             : 70vh;
+}
+@media screen and (max-width:500px) {
+
+     :root {
+          --img-size  : 100%;
+          --img-height: 30rem;
+          --btn-f-size: 20px;
+          --btn-p-tb  : .8em;
+          --btn-p-lr  : 2em;
+
+     }
+
+     .img-mata {
+          padding-bottom: 2rem;
+     }
+
+     .img-desc p {
+          padding: 0 1rem;
+     }
+     
+.clg-img {
+     object-fit: contain;
+     object-position: center;
+     height: 100vh !important;
+}
+}

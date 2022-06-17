@@ -1,0 +1,120 @@
+* {
+     margin         : 0;
+     padding        : 0;
+     box-sizing     : border-box;
+     scroll-behavior: smooth;
+}
+
+body {
+     font-family     : 'Montserrat', sans-serif;
+     overflow-x      : hidden;
+     background-color: black;
+}
+
+.intro,
+.intro-about-us {
+     overflow             : hidden;
+     z-index              : -1;
+     min-height           : 45vh;
+     width                : 100%;
+     height               : 100%;
+     display              : flex;
+     justify-content      : center;
+     align-items          : center;
+     background-position  : 50%;
+     background           : url("../img/bg-contactus.png") no-repeat fixed top;
+     background-size      : cover;
+     background-color     : rgb(15, 12, 12);
+     background-blend-mode: hard-light;
+     background-attachment: fixed;
+}
+
+.intro-sponsor,
+.intro-event-details {
+     background-attachment: fixed;
+     overflow             : hidden;
+     z-index              : -1;
+     min-height           : 50vh;
+     width                : 100%;
+     height               : 100%;
+     display              : flex;
+     justify-content      : center;
+     align-items          : center;
+     background-position  : 40%;
+     background           : url("../img/red\ \(1\).jpg") no-repeat fixed top;
+     background-size      : cover;
+     background-position  : 100%;
+}
+
+.intro-sponsor {
+     background-image: url("../img/try-bg-sponsors.png");
+}
+
+.intro-head {
+     font-family: Arial;
+     font-weight: bold;
+     font-size  : 100px;
+     color      : transparent;
+     text-shadow: 0 5px 6px #ffffff, 0 -1px 1px white;
+}
+
+@media screen and (max-width:790px) {
+
+     .intro,
+     .intro-sponsor,
+     .intro-about-us,
+     .intro-event-details {
+          background-attachment: scroll;
+     }
+
+     .intro-head {
+          padding: 0 2rem;
+          font-size: 75px !important;
+     }
+}
+
+@media screen and (max-width:600px) {
+     .intro-head {
+          font-size: 60px !important;
+     }
+}
+
+@media screen and (max-width:500px) {
+     .intro-head {
+          display    : grid;
+          place-items: center;
+          padding    : 1rem 0 0 50px !important;
+          font-size  : 40px !important;
+     }
+}
+
+
+@media all and (max-width: 780px) {
+
+     .intro,
+     .intro-sponsor {
+          padding-top: 10rem !important;
+          height     : 60vh !important;
+     }
+}
+
+@media screen and (max-height:780px) {
+     .intro-head {
+          padding: 10rem 0 5rem !important;
+     }
+}
+
+@media screen and (max-width:320px) {
+     .intro-head {
+          font-size: 30px !important;
+     }
+}
+
+@import "components/nav";
+@import "components/main";
+@import "components/contact-us";
+@import "components/sponsors";
+@import "components/speakers";
+@import "components/footer";
+@import "components/about-us";
+@import "./components/event";

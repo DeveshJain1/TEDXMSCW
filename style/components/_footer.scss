@@ -1,0 +1,305 @@
+footer {
+     background: #000;
+     width     : 100%;
+}
+
+.social-icon {
+     padding-top    : 3rem;
+     display        : flex;
+     justify-content: center;
+     align-items    : center;
+     gap            : 2rem;
+     height         : 20vh;
+}
+
+.social-icon li {
+     cursor               : pointer;
+     list-style           : none;
+     padding              : 30px;
+     margin               : 2rem;
+     border-radius        : 100%;
+     font-size            : 2em;
+     box-shadow           : 3px 3px 10px #d9d9d9, -3px -3px 10px #fff;
+     transition           : all 0.3s ease;
+     background           : #fff;
+     -webkit-transition   : all 0.3s ease;
+     -moz-transition      : all 0.3s ease;
+     -ms-transition       : all 0.3s ease;
+     -o-transition        : all 0.3s ease;
+     -webkit-border-radius: 100%;
+     -moz-border-radius   : 100%;
+     -ms-border-radius    : 100%;
+     -o-border-radius     : 100%;
+}
+
+@media screen and (min-width:1700px) {
+
+     .social-icon li {
+          font-size: 3em;
+     }
+}
+
+.social-icon li i {
+     color: black;
+}
+
+.social-icon li:hover {
+     transform        : translateY(20px);
+     //box-shadow: 3px 3px 10px #d9d9d9, -3px -3px 10px #fff;
+     -webkit-transform: translateY(20px);
+     -moz-transform   : translateY(20px);
+     -ms-transform    : translateY(20px);
+     -o-transform     : translateY(20px);
+}
+
+.parent {
+     display        : flex;
+     justify-content: space-evenly;
+     align-items    : center;
+
+}
+
+.div2 {
+     color      : white;
+     line-height: 2em;
+}
+
+span {
+     color          : wheat;
+     display        : flex;
+     justify-content: center;
+     font-size      : 30px;
+     gap            : 1rem;
+}
+
+h2 {
+     font-size     : 50px;
+     padding-bottom: 2rem;
+     text-align    : center;
+}
+
+address {
+     display        : flex;
+     justify-content: center;
+     align-items    : center;
+     font-size      : 30px;
+     line-height    : 3rem;
+}
+
+.rights {
+     padding-bottom: 1rem;
+}
+
+iframe {
+     width                : 500px;
+     height               : 400px;
+     border-radius        : 12px;
+     -webkit-border-radius: 12px;
+     -moz-border-radius   : 12px;
+     -ms-border-radius    : 12px;
+     -o-border-radius     : 12px;
+}
+
+@media screen and (max-width:1400px) {
+     .div1 img {
+          width : 90%;
+          height: 80%;
+     }
+
+     h2 {
+          font-size     : 40px;
+          padding-bottom: 2rem;
+
+     }
+
+     address {
+          font-size  : 20px;
+          line-height: 2.5rem;
+     }
+
+     iframe {
+          width : 400px;
+          height: 300px;
+     }
+
+     span {
+          font-size: 20px;
+     }
+}
+
+@media screen and (max-width:1050px) {
+     iframe {
+          padding-left : 20px;
+          padding-right: 20px;
+          width        : 350px;
+          height       : 300px;
+          ;
+     }
+}
+
+@media screen and (max-width:940px) {
+     span {
+          display: block;
+     }
+
+     .social-icon {
+          padding: 2em 1rem;
+     }
+
+     .social-icon li {
+          margin : .5rem;
+          padding: 25px;
+     }
+
+     .div1 img {
+
+          width : 100%;
+          height: 560px;
+     }
+
+     .parent {
+          display: block;
+
+     }
+
+     iframe {
+          width       : 90%;
+          padding     : 2rem;
+          padding-left: 4rem;
+     }
+}
+
+@media screen and (max-width:500px) {
+     address {
+
+          padding-left : 30px;
+          padding-right: 10px;
+     }
+
+     .social-icon li {
+          margin   : 0;
+          padding  : 15px;
+          font-size: .8em;
+
+     }
+
+     .div1 img {
+          margin    : 0;
+          width     : 100%;
+          height    : 350px;
+          object-fit: contain;
+     }
+
+
+}
+
+@media screen and (max-width:320px) {
+     nav {
+          padding-right: 1rem;
+     }
+
+     .social-icon li {
+          margin   : 0;
+          padding  : 10px;
+          font-size: .8em;
+
+     }
+
+     .div1 img {
+          margin    : 0;
+          width     : 95%;
+          height    : 280px;
+          object-fit: contain;
+     }
+
+     iframe {
+          width  : 100%;
+          padding: 1rem;
+     }
+
+     span {
+          font        : 10px;
+          display     : inline;
+          padding-left: 1rem;
+     }
+
+}
+
+
+
+
+#facebook:hover {
+     box-shadow        : 3px 3px 10px #3b5998, -3px -3px 10px #3b5998;
+     transition        : all 0.3s ease;
+     background        : #3b5998;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition   : all 0.3s ease;
+     -ms-transition    : all 0.3s ease;
+     -o-transition     : all 0.3s ease;
+}
+
+#facebook:hover i {
+     color      : white;
+     font-weight: bold;
+
+}
+
+#twitter:hover {
+
+     box-shadow        : 3px 3px 10px #00acee, -3px -3px 10px #00acee;
+     transition        : all 0.3s ease;
+     background        : #00acee;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition   : all 0.3s ease;
+     -ms-transition    : all 0.3s ease;
+     -o-transition     : all 0.3s ease;
+}
+
+#twitter:hover i {
+     color      : white;
+     font-weight: bold;
+
+}
+
+#linkedin:hover {
+     box-shadow        : 3px 3px 10px #0077b5, -3px -3px 10px #0077b5;
+     transition        : all 0.3s ease;
+     background        : #0077b5;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition   : all 0.3s ease;
+     -ms-transition    : all 0.3s ease;
+     -o-transition     : all 0.3s ease;
+
+}
+
+#linkedin:hover i {
+     color      : white;
+     font-weight: bold;
+
+}
+
+#instagram:hover {
+     box-shadow: 3px 3px 10px #cd486b, -3px -3px 10px #fbad50;
+     transition: all 0.3s ease;
+     background: #f09433;
+     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+     filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+     -webkit-transition: all 0.3s ease;
+     -moz-transition   : all 0.3s ease;
+     -ms-transition    : all 0.3s ease;
+     -o-transition     : all 0.3s ease;
+
+}
+
+
+#instagram:hover i {
+     color      : white;
+     font-weight: bold;
+
+}
+footer section{
+     padding-bottom: 3rem;
+}
